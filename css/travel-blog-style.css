@@ -129,6 +129,11 @@ color: var(--bg-primary);
     padding: 1em;
 }
 
+.activites .activites-photos .activity img {
+    width: 150px;
+    height: 150px;
+}
+
 .activites .activites-photos .activity h3 {
     color: var(--font-color-secondary);
     font-size: 25px;
