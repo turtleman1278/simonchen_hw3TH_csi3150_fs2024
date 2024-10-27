@@ -4,24 +4,35 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     /* overflow: hidden; */
+    --bg-primary: #EADEDA;
+    --bg-secondary: #FB5607;
+    --font-color-primary: #297045;
+    --font-color-secondary: #FFFB46;
+    --backup-color: #18492d;
 }
 
 .hero {
+    background-image: url(../assests/images/pexels-andreimike-1271620.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 50px;
-    padding: 2em;
-    
+    /* margin: 50px; */
+    padding: 2em; 
 }
 
 .hero .title{
+    color: var(--bg-primary);
     font-size: 100px;
     font-weight: 500;
 }
 
 .hero .subtitle {
+color: var(--bg-primary);
     margin: 30px;
     padding: 1em;
     font-size: 30px;
@@ -29,44 +40,74 @@
 }
 
 .hero i{
+    color: var(--bg-primary);
     font-size: 100px;
     font-weight: 800;
+    transform: color 0.3s ease;
+    cursor: pointer;
+}
+
+.hero i:hover{
+    color: var(--font-color-primary);
 }
 
 .intro {
+    background-image: url(../assests/images/pexels-eberhardgross-1367192.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: space-evenly;    
 }
 
 .intro h2 {
+    color: var(--font-color-secondary);
     font-size: 50px;
     font-weight: 700;
-    margin: 30px;
-    padding: 2em;
+    margin: 50px;
+    padding: 1em;
 }
 
 .intro .intro-description {
-    margin: 10%;
+    color: var(--font-color-secondary);
+    margin-left: 20%;
+    margin-right: 10%;
     padding: 1em;
 }
 
 .intro .intro-description p{
-    font-size: 30px;
+    font-size: 15px;
 }
 
 .intro .intro-description button{
+    background: var(--font-color-secondary);
+    color: var(--backup-color);
+    border: none;
+    border-radius: 500px;
     margin-top: 50px;
     font-size: 25px;
     padding: 10px;
+    cursor: pointer;
+    transform: color 0.3s ease;
+}
+
+.intro .intro-description button:hover {
+    color: var(--bg-primary);
 }
 
 .activites {
+    background-image: url(../assests/images/pexels-souvenirpixels-414612\ \(1\).jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 100px;
+    /* margin-bottom: 5px; */
     padding: 1em;
 }
 
@@ -77,36 +118,65 @@
     margin: 0;
 }
 
+.activites h2{
+    color: var(--font-color-secondary);
+    margin-top: 150px;
+    margin-bottom: -100px;
+}
+
 .activites .activites-photos .activity {
     margin: 40%;
     padding: 1em;
 }
 
 .activites .activites-photos .activity h3 {
+    color: var(--font-color-secondary);
     font-size: 25px;
     font-weight: 800;
 }
 
 .activites .activites-photos .activity i {
+    color: var(--bg-primary);
     font-size: 80px;
     font-weight: 400;
+    cursor: pointer;
+    transform: color 0.3s ease;
+}
+
+.activites .activites-photos .activity i:hover {
+    color: var(--bg-secondary);
 }
 
 .activites button {
-    margin-top: 50px;
+    background-color: var(--bg-secondary);
+    color: var(--font-color-secondary);
+    transform: color 0.3s ease;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-bottom: 150px;
     font-size: 25px;
     padding: 10px;
 }
 
+.activites button:hover {
+    color: var(--bg-primary);
+}
+
 .recommendation {
+    background-image: url(../assests/images/pexels-ken123films-1796795.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    /* margin: 10px; */
     padding: 1em;
 }
 
 .recommendation h2 {
+    color: var(--font-color-secondary);
     font-size: 40px;
     margin: 0;
     padding: 2em;
@@ -119,23 +189,30 @@
 }
 
 .recommendation .recommendation-content p {
+    color: var(--bg-primary);
     font-size: 20px;
     margin: 20px;
     padding: .5em;
 }
 
 .recommendation .recommendation-content h3 {
+    color: var(--font-color-secondary);
     font-size: 30px;
     margin: 20px;
     padding: .5em;
 }
 
 .facts {
+    background-image: url(../assests/images/pexels-hobiphotography-29048056.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 150px;
-    padding: 1em;
+    /* margin: 150px; */
+    padding: 3em;
 }
 
 .facts .fact-content {
@@ -161,19 +238,35 @@
 }
 
 .author {
+    background-image: url(../assests/images/pexels-trupert-2608040.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     padding: 20em;
 }
 
+.author img {
+    width: 170px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 40px;
+
+
+}
+
 .author p{
+    color: var(--bg-secondary);
     font-size: 30px;
 }
 
 .author h3 {
+    color: var(--bg-primary);
     font-size: 50px;
     margin: 30px;
     padding: 1em;
@@ -181,6 +274,13 @@
 
 .author i{
     font-size: 200px;
+    transform: color 0.3s ease;
+    color: var(--font-color-secondary);
+    cursor: pointer;
+}
+
+.author i:hover {
+    color: var(--bg-primary);
 }
 
 
@@ -191,7 +291,80 @@
 }
 
 .gal img{
-    width: 650px;
-    height: 650px;
+    width: 400px;
+    height: 350px;
+    margin: 0;
+    padding: 0em;
 }
 
+
+footer {
+    background-image: url(../assests/images/pexels-andreimike-1271620.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 70px; */
+    padding: 1em;
+}
+footer .left {
+    margin: 10px;
+}
+
+footer .left h2 {
+    color: var(--font-color-secondary);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+footer .left ul li {
+    color: var(--bg-primary);
+    text-decoration: none;
+    list-style: none;
+    margin: 10px;
+}
+
+footer .left .icon-wrapper i {
+    color: var(--bg-secondary);
+    margin: 5px;
+    font-size: 30px;
+}
+
+footer .right {
+    margin: 70px;
+    padding: 1em;
+    font-size: 60px;
+}
+
+footer .right form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+footer .right input {
+    margin: 10px;
+    font-size: 15px;
+}
+
+footer .right form textarea {
+    margin: 10px;
+    font-size: large;
+}
+
+footer .right form button {
+    font-size: 15px;
+    border-radius: 200px;
+    padding: 6px;
+    transform: color 0.3s ease;
+    cursor: pointer;
+    background-color: var(--font-color-secondary);
+}
+
+footer .right form button:hover {
+    background: var(--bg-primary);
+}
